@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин готовых шаблонов</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="center-wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img src="https://placehold.it/350x150" width="350" height="150" alt="Nёrd's">
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Студия</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Клиенты</a>
+            </li>
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link main-nav__link--current">Магазин</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="main-nav__user-block">
+            <a class="main-nav__link main-nav__link--cart" href="#">Корзина</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1 class="page-title">Магазин готовых шаблонов</h1>
+      <aside class="filters">
+        <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="filters__fieldset">
+            <legend class="filters__legend">Стоимость:</legend>
+            <input type="range" name="price" min="0" max="20000" step="1000" value="15000">
+          </fieldset>
+          <fieldset class="filters__fieldset">
+            <legend class="filters__legend">Сетка:</legend>
+            <ul class="filters__list">
+              <li class="filters__item">
+                <input class="filters__input" type="radio" name="grid" value="adaptive" id="adaptive" checked>
+                <label for="adaptive" class="filters__label">Адаптивная</label>
+              </li>
+              <li class="filters__item">
+                <input class="filters__input" type="radio" name="grid" value="fixed" id="fixed">
+                <label for="fixed" class="filters__label">Фиксированная</label>
+              </li>
+              <li class="filters__item">
+                <input class="filters__input" type="radio" name="grid" value="responsive" id="responsive">
+                <label for="responsive" class="filters__label">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filters__fieldset">
+            <legend class="filters__legend">Особенности:</legend>
+            <ul class="filters__list">
+              <li class="filters__item">
+                <input class="filters__input" type="checkbox" name="features" value="slider" id="slider" checked>
+                <label for="slider" class="filters__label">Слайдер</label>
+              </li>
+              <li class="filters__item">
+                <input class="filters__input" type="checkbox" name="features" value="advantages" id="advantages">
+                <label for="advantages" class="filters__label">Блок преимуществ</label>
+              </li>
+              <li class="filters__item">
+                <input class="filters__input" type="checkbox" name="features" value="news" id="news" checked>
+                <label for="news" class="filters__label">Новости</label>
+              </li>
+              <li class="filters__item">
+                <input class="filters__input" type="checkbox" name="features" value="gallery" id="gallery">
+                <label for="gallery" class="filters__label">Галерея</label>
+              </li>
+              <li class="filters__item">
+                <input class="filters__input" type="checkbox" name="features" value="cart" id="cart">
+                <label for="cart" class="filters__label">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="btn btn--filters" type="submit">Показать</button>
+        </form>
+      </aside>
+      <div class="catalog">
+        <div class="sort">
+          <span class="sort__title">Сортировать:</span>
+          <button class="sort__btn">По цене</button>
+          <button class="sort__btn">По типу</button>
+          <button class="sort__btn">По названию</button>
+          <button class="sort__btn sort__btn--decrease">По убыванию</button>
+          <button class="sort__btn sort__btn--increase">По возрастанию</button>
+        </div>
+        <div class="catalog__items">
+          <article class="catalog__item">
+            <div class="catalog__image">
+              <img src="https://placehold.it/350x150" width="350" height="150" alt="Sedona">
+            </div>
+            <h2 class="catalog__name">Sedona</h2>
+            <p class="catalog__desc">Информационный сайт для туристов</p>
+            <a class="btn btn--buy" href="#">9 900 руб.</a>
+          </article>
+          <article class="catalog__item">
+            <div class="catalog__image">
+              <img src="https://placehold.it/350x150" width="350" height="150" alt="Pink App">
+            </div>
+            <h2 class="catalog__name">Pink App</h2>
+            <p class="catalog__desc">Продуктивный лендинг приложения для iOS и Androud</p>
+            <a class="btn btn--buy" href="#">9 900 руб.</a>
+          </article>
+          <article class="catalog__item">
+            <div class="catalog__image">
+              <img src="https://placehold.it/350x150" width="350" height="150" alt="Barbershop">
+            </div>
+            <h2 class="catalog__name">Barbershop</h2>
+            <p class="catalog__desc">Сайт салона красоты. Для мужчин, да.</p>
+            <a class="btn btn--buy" href="#">9 900 руб.</a>
+          </article>
+          <article class="catalog__item">
+            <div class="catalog__image">
+              <img src="https://placehold.it/350x150" width="350" height="150" alt="Mishka">
+            </div>
+            <h2 class="catalog__name">Mishka</h2>
+            <p class="catalog__desc">Интернет-магазин вязаных игрушек</p>
+            <a class="btn btn--buy" href="#">9 900 руб.</a>
+          </article>
+          <article class="catalog__item">
+            <div class="catalog__image">
+              <img src="https://placehold.it/350x150" width="350" height="150" alt="A Plus">
+            </div>
+            <h2 class="catalog__name">A Plus</h2>
+            <p class="catalog__desc">Лендинг курсов повышения квалификации</p>
+            <a class="btn btn--buy" href="#">9 900 руб.</a>
+          </article>
+          <article class="catalog__item">
+            <div class="catalog__image">
+              <img src="https://placehold.it/350x150" width="350" height="150" alt="Кваст">
+            </div>
+            <h2 class="catalog__name">Кваст</h2>
+            <p class="catalog__desc">Промо-сайт производителя крафтового кваса</p>
+            <a class="btn btn--buy" href="#">9 900 руб.</a>
+          </article>
+        </div>
+        <nav class="pagination">
+          <a class="pagination__link pagination__link--current" href="#">1</a>
+          <a class="pagination__link" href="#">2</a>
+          <a class="pagination__link" href="#">3</a>
+          <a class="pagination__link pagination__link--next" href="#">Следующая</a>
+        </nav>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <section class="contacts">
+        <h2 class="contacts__title visually-hidden">Контакты:</h2>
+        <div class="center-wrapper">
+          <b class="contacts__name">Nёrds design studio</b>
+          <p class="contacts__text">
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8
+          </p>
+          <a class="contacts__phone" href="+78122757575">тел. +7 (812) 275-75-75</a>
+          <a class="btn" href="#">Напишите нам</a>
+        </div>
+      </section>
+      <section class="socials">
+        <h2 class="socials__title visually-hidden">Мы в социальных сетях:</h2>
+        <div class="center-wrapper">
+          <a class="socials__btn socials__btn--vk" href="#">ВКонтакте</a>
+          <a class="socials__btn socials__btn--fb" href="#">Facebook</a>
+          <a class="socials__btn socials__btn--inst" href="#">Instagram</a>
+          <p class="socials__lead">
+            Давайте дружить, это выгодно!
+            <span class="socials__lead--note">Скидка 10% для друзей из социальных сетей</span>
+          </p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
